@@ -1,5 +1,4 @@
 import fetchData from '../libs/fetch';
-
 import useSWR from 'swr';
 
 export default function Home({ query, secret, endPoint }) {
