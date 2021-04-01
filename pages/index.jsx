@@ -4,7 +4,7 @@ import useSWR from 'swr';
 export default function Home({ query, secret, endPoint }) {
   const { data, error } = useSWR(query, getData);
 
-  async function getData(...args) {
+  async function getData() {
     return await fetchData(query, secret, endPoint);
   }
 

@@ -7,7 +7,7 @@ const optimisticUI = ({ query, secret, endPoint }) => {
   const [text, setText] = useState('');
   const { data } = useSWR(query, getData);
 
-  async function getData(...args) {
+  async function getData() {
     return await fetchData(query, secret, endPoint);
   }
 
